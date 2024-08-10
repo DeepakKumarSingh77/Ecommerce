@@ -17,8 +17,8 @@ export const stripesession=async(req,res)=>{
           },
         ],
         mode: 'payment',
-        success_url: 'https://example.com/success',
-        cancel_url: 'https://example.com/cancel',
+        success_url: 'https://deepak-ecom.netlify.app/success',
+        cancel_url: 'https://deepak-ecom.netlify.app/cancel',
       });
       res.send({url:session.url});
 }
