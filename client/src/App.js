@@ -14,6 +14,8 @@ import Addnewproduct from './Components/Addnewproduct';
 import AllUser from './Components/AllUser';
 import AllExitingproduct from './Components/AllExitingproduct';
 import Responsive from './Components/Responsive';
+import Success from './Pages/Success';
+import Cancel from './Pages/Cancel';
 
 const PrivateRouteadmin=({admin,...props})=>{
   return admin?(
@@ -72,6 +74,8 @@ function App() {
         <Route path="/alluser" element={<PrivateRouteadmin admin={admin}/>}>
               <Route path='/alluser' element={<AllUser/>}/>
         </Route>
+        <Route path='/success' element={<Success/>}/>
+          <Route path='/cancel' element={<Cancel/>}/>
       </Routes>
     </BrowserRouter>
     </div>
