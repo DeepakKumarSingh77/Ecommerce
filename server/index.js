@@ -108,8 +108,8 @@ app.post('/create-checkout-session', async (req, res) => {
         shipping_address_collection:{
           allowed_countries:['US','IN']
         },
-        success_url: 'https://example.com/success',
-        cancel_url: 'https://example.com/cancel',
+        success_url: 'https://deepak-ecom.netlify.app/success',
+        cancel_url: 'https://deepak-ecom.netlify.app/cancel',
     });
     return res.status(200).json({ url: session.url });
 });
